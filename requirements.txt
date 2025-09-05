@@ -6,3 +6,4 @@ autogen-core
 autogen-ext
 httpx
 aiohttp
+tiktoken

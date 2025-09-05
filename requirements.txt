@@ -1,4 +1,8 @@
 fastapi
 uvicorn
+pydantic
+openai
 autogen-core
 autogen-ext
+httpx
+aiohttp

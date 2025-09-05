@@ -1,0 +1,78 @@
+HARMANJEET SINGH PMP, ISTQB, Snowflakes Certified
+Cell: 416-573-1240
+Email: siharmanjeet3@gmail.com
+PROFESSIONAL SUMMARY
+Experienced QA Professional with 9+ years in Software Testing, delivering high-quality web, data, and CRM applications across multiple domains. Specialized in Automation, Manual, API, and CRM Testing, with deep expertise in tools like Selenium, Playwright, Postman, Swagger, Jira, and CI/CD pipelines. Certified PMP and ISTQB, with strong experience in Agile methodologies, test planning, stakeholder communication, and leading QA teams. Proven ability to drive testing initiatives from planning to execution and final sign-off, ensuring timely and high-quality releases.
+CERTIFICATIONS
+* PMP – Project Management Professional (PMI)
+* ISTQB – Certified Tester Foundation Level
+* Snowflakes Core Pro
+TECHNICAL SKILLS
+Testing Types: Functional, Regression, Smoke, UAT, API Testing, CRM Testing, End-to-End, Data 
+Automation Tools: Selenium WebDriver, Playwright
+API Tools: Postman, Swagger, REST Assured
+CRM Platforms: MS Dynamics
+Test Management: Jira, Zephyr, Confluence
+CI/CD Tools: Jenkins, GitLab CI/CD, Azure DevOps
+Cloud/Data: Snowflake
+Languages/Scripting: Java, JavaScript, Python, C#, SQL
+Others: ADP, Test Planning, Monitoring & Control, Stakeholder Communication, Agile/Scrum
+PROFESSIONAL EXPERIENCE
+Senior QA Analyst
+Environics Analytics
+April 2024 - Present
+* Led test strategy and execution for CRM projects, including Salesforce and MS Dynamics integrations.
+* Designed and implemented automated and manual test cases for web and CRM modules.
+* Built scalable automation frameworks using Selenium and Playwright, reducing manual regression cycles.
+* Verify data integration, data fetching at front end  , ETL process on MYSQL and Snowflakes Database by running SQL queries .
+* Validated RESTful APIs with Postman and defined API schema using Swagger.
+* Integrated test suites into CI/CD pipelines and monitored builds via Jenkins.
+* Drove Agile ceremonies, sprint planning, and retrospectives as QA lead.
+* Acted as a liaison between QA, Dev, and Business teams for test sign-off and stakeholder reporting.
+Tools and Env : JavaScript , C# , Selenium , Playwright , Postman , Snowflakes ,MySQL, ADO, Miro 
+Lead QA Analyst
+YDC Pro | Client: Equifax
+Sept 2020 - Dec 2023
+* Collaborated with cross-functional teams to define test scope, execution strategies, and quality metrics for multiple concurrent software projects.
+* Assisted in project planning, created detailed schedules and resource allocation plans aligned with business priorities and stakeholder expectations.
+* Participated in technical feasibility discussions with product managers and developers to validate scope and complexity.
+* Conducted manual and automated functional, regression, and system testing on web and backend applications.
+* Perform data testing in GCP and AS400 database by running complex SQL queries and verifying the responses .
+* Created and maintained test documentation, including test plans, traceability matrices, and test cases.
+* Supported program reporting for senior leadership, flagging risk areas and proposing mitigation plans early in the SDLC.
+* Managed defect lifecycle using Jira, collaborating closely with developers to ensure timely bug fixes and retesting.
+Tools and Env : Java, Python Selenium , TestNG , MySQL, Query Surge , Jira  , Swagger, Confluence , GCP
+
+
+QA Analyst
+Quventix Solution
+Dec 2016 – Aug 2020
+* Managed end-to-end test planning, test case design, and execution for multiple software releases across complex integrated systems.
+* Collaborated with PMs and developers to scope validation efforts and define technical feasibility for product enhancements.
+* Created automation scripts using Selenium, reducing regression testing time by 50%.
+* Oversaw defect lifecycle management in Jira, working closely with developers to ensure timely resolution.
+Tools and Env : Java, Selenium , TestNG , Jira 
+
+PROJECT HIGHLIGHTS
+* CRM Implementation Project: Led QA for CRM rollout, validating workflows, triggers, custom objects, and user access controls.
+* E2E testing: Tested end-to-end flows between core systems and APIs.
+* Automation Suite: Built Playwright-based framework for functional and regression tests.
+* Snowflake Data Testing: Automated Snowflake data validation for large-scale ETL projects.
+EDUCATION
+PG Diploma in Cloud Computing, 2022
+Masters in Engineering, 2016
+Bachelors in Engineering, 2014
+PROFESSIONAL ATTRIBUTES
+* Strong leadership and team coordination skills
+* Effective communicator with technical and business stakeholders
+* Detail-oriented with a focus on continuous improvement
+* Agile mindset with a passion for delivering quality at speed
+RESEARCH PAPERS PUBLISHED
+* A novel energy-efficient ICI cancellation technique for bandwidth improvements through cyclic prefix reuse in an OFDM system
+https://link.springer.com/article/10.1631/FITEE.1601333
+* Design of a novel hybrid intercarrier interference mitigation technique through wavelet implication in an OFDM system
+https://www.sciencedirect.com/science/article/pii/S2352864816300876
+* A Novel Hybrid ICI Cancellation Technique for OFDM Optimization
+https://ieeexplore.ieee.org/document/7453374
+HOBBIES
+Professional Wrestler – Compete at national level in India and Canada.

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harmanjeet Singh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+   <body>
+    <nav id="desktop-nav">
+      <div class="logo">Harman</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#Certifications">Certifications</a></li>
+          <li><a href="#papers">Papers</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Harman</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#Certifications" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#papers" onclick="toggleMenu()">Papers</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpeg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Harmanjeet Singh</h1>
+        <p class="section__text__p2">QA- ISTQB-PMP</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Harmanjeet_SeniorQA.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/harmanjeet-singh-pmp-istqb-3501791b7'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Harmanjeet3'"
+          />
+          <a href="tel:+14165731240">
+            <img 
+                src="./assets/phone.png" 
+                alt="Phone icon" 
+                class="icon"
+            />
+        </a>
+        
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>9 years <br />QA</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Masters Of Engineering <br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Detail-oriented Senior QA-ISTQB- PMP professional with expertise in manual and automation testing, ensuring the delivery of 
+                high-quality software solutions. Experienced in leading QA teams, defining test strategies, and implementing automation
+                 frameworks. Strong knowledge of SDLC, STLC, and various testing methodologies, with a proven ability to manage test processes and drive team success.
+                 Excellent analytical, problem-solving, and communication skills, fostering collaboration across teams and stakeholders.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+     
+        <div class="experience-details-container">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Quality Assurance</h2>
+              <div class="article-container">
+                                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Selenium</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TestNg</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Postman</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Rest Assured</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Query Surge</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JMeter</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Jira</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Azure Devops</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+              </div>
+            </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tech</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CI/CD</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Project Management</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Planning</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Risk Assesment</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Team Management</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Agile</h3>
+                  <p>Experienced</p>
+                </div>
+                
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Stakeholders Management</h3>
+                  <p>Intermediate</p>
+                </div>
+                
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Communication</h3>
+                  <p>Experienced</p>
+                </div>
+                
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>KPIs</h3>
+                  <p>Experienced</p>
+                </div>
+                
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scrum</h3>
+                  <p>Experienced</p>
+                </div>
+                
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Certifications'"
+      />
+    </section>
+
+   
+
+
+
+    <section id="Certifications">
+        
+        <p class="section__text__p1">Check My</p>
+        <h1 class="title">Certifications</h1>
+          <div class="experience-details-container">
+           <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                  <img
+                      src="./assets/pmp.png"
+                      
+                      class="certification-img"
+                  />
+                  </div>
+              <h2 class="experience-sub-title project-title">PMP</h2>
+              
+            </div>
+          <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/Playwright.png"
+                  
+                  class="certification-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Playwright</h2>
+              
+            </div>
+           
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/ISTQB.png"
+                  
+                  class="certification-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">ISTQB</h2>
+              
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/snowflakes.png"
+                  
+                  class="certification-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Snowflake</h2>
+              
+            </div>
+          </div>
+        </div>
+     
+        </section>
+
+        <section id="papers">
+        
+            <p class="section__text__p1">Explore my</p>
+            <h1 class="title">Research Papers</h1>
+              <div class="experience-details-container">
+               <div class="about-containers">
+                    <div class="details-container color-container">
+                      <div class="article-container">
+                        <ul>
+                           </ul> <h5>
+                            
+                                
+                            
+                            <li>
+                                <img
+                                src="./assets/spring.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                                <a  href="https://link.springer.com/article/10.1631/FITEE.1601333 " target="_blank">A novel energy-efficient ICI cancellation
+                                     technique for bandwidth improvements through cyclic prefix reuse in an OFDM system   </a>
+                                    </li> </h5> 
+                                    <h5><li>
+                                        <img
+                                src="./assets/sciencedirect.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                                <a href="https://www.sciencedirect.com/science/article/pii/S2352864816300876 " target="_blank">Design of a novel hybrid intercarrier interference mitigation 
+                                    technique through wavelet implication in an OFDM system        </a>
+                            </li></h5> 
+                            <h5><li>
+                                <img
+                                src="./assets/ieee.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                                <a href="https://ieeexplore.ieee.org/document/7453374 " target="_blank">A Novel Hybrid ICI Cancellation Technique for OFDM Optimization          </a>
+                            </li></h5> 
+                        </ul>
+                      </div>
+                  
+                  
+                </div>
+              
+               
+               
+         
+            </section>
+   
+       
+ <section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+     <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+            <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+            />
+            </div>
+        
+        <!--<div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button>
+        </div>-->
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/project-2.png"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+         
+        
+      
+        
+        
+      </div>
+    </div>
+
+    <div class="experience-details-container">
+        <div class="about-containers">
+             <div class="details-container color-container">
+               <div class="article-container">    <img
+      src="./assets/project-3.png"
+      alt="Project 3"
+      class="project-img"
+    />
+  </div>
+  
+  
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="./assets/project-4.png"
+      alt="Project 3"
+      class="project-img"
+    />
+  </div>
+
+</div>
+</div>
+
+
+
+  </div>
+    <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+    />
+  
+  </section>
+
+
+ 
+
+
+
+
+
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:siharmanjeet3@gmail.com">siharmanjeet3@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/harmanjeet-singh-pmp-istqb-3501791b7">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+              src="./assets/phone.png"
+              alt="Phone icon"
+              class="icon contact-icon"
+            />
+            <p><a href="tel:+14165731240">+1 (416) 573-1240</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#Certifications">Certifications</a></li>
+            <li><a href="#papers">Papers</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+     <p>ਨਿਰਭਉ ਨਿਰਵੈਰ</p>
+    </footer>
+    <script src="script.js"></script>
+
+    </div>
+    <div class="chatbot-section">
+        <h1>Welcome! I’m your Portfolio Guide.</h1>
+        <div id="chatbox"></div>
+        <div id="inputArea">
+            <input type="text" id="message" placeholder="Type your message..." autocomplete="off">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        const chatbox = document.getElementById('chatbox');
+        const messageInput = document.getElementById('message');
+
+    function appendMessage(sender, text) {
+      const msgDiv = document.createElement('div');
+      msgDiv.className = sender;
+      msgDiv.textContent = (sender === 'user' ? 'You: ' : 'Assistant: ') + text;
+      chatbox.appendChild(msgDiv);
+      chatbox.scrollTop = chatbox.scrollHeight;
+    }
+
+        async function sendMessage() {
+            const message = messageInput.value.trim();
+            if (!message) return;
+            appendMessage('user', message);
+            messageInput.value = '';
+            try {
+                const res = await fetch('http://127.0.0.1:8000/ask', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message })
+                });
+                const data = await res.json();
+                appendMessage('bot', data.response);
+            } catch (err) {
+                appendMessage('bot', 'Error: Could not connect to API.');
+            }
+        }
+
+        // Allow pressing Enter to send message
+        messageInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') sendMessage();
+        });
+    </script>
+  </body>
+</html>

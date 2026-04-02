@@ -1,4 +1,4 @@
-﻿from fastapi import FastAPI
+from fastapi import FastAPI
 from pydantic import BaseModel
 from openai import AsyncOpenAI
 from fastapi.middleware.cors import CORSMiddleware
@@ -29,25 +29,9 @@ async def ask_resume(request: UserRequest):
 
     response = await client.chat.completions.create(
         model="gemini-2.0-flash",
-        messages=[
-            {
-                "role": "user",
-                "content": (
-                    "You are an AI assistant for Harmanjeet Singh's portfolio website. "
-                    "Reply for greetings like 'hello', 'hi', 'hey' with a friendly greeting. and ask how can you help. "
-                    "If the user asks about your capabilities, you can say: "
-                    "'I can answer questions about Harmanjeet Singh's portfolio, including his experience, projects, and skills.'\n"
-                    "if the user says 'thank you' or 'thanks', respond with 'You are welcome! If you have any more questions, feel free to ask.'\n"
-                    "if user says 'who are you' or 'what is your name', respond with 'I am Harmanjeet Singh portfolio assistant.'\n"
-                    "You MUST only answer questions using the resume below. "
-                    "If the question is not in the resume, reply: "
-                    "'That information is not available in the portfolio.'\n\n"
-                    f"Resume:\n{resume_text}\n\n"
-                    f"Question: {request.message}"
-                )
-            }
-        ]
+        messages=[{"role": "user", "content": f"You are an AI assistant for Harmanjeet Singh's portfolio website. Reply for greetings like 'hello', 'hi', 'hey' with a friendly greeting and ask how can you help. If the user asks about your capabilities, say: 'I can answer questions about Harmanjeet Singh portfolio, including his experience, projects, and skills.' If the user says 'thank you' or 'thanks', respond with 'You are welcome! If you have any more questions, feel free to ask.' If user says 'who are you' or 'what is your name', respond with 'I am Harmanjeet Singh portfolio assistant.' You MUST only answer questions using the resume below. If the question is not in the resume, reply: 'That information is not available in the portfolio.'\n\nResume:\n{resume_text}\n\nQuestion: {request.message}"}]
     )
-
     reply_text = response.choices[0].message.content
     return {"response": reply_text}
+
+

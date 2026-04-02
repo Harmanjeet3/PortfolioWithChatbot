@@ -28,7 +28,8 @@ async def ask_resume(request: UserRequest):
     # Initialize model client
     model_client = OpenAIChatCompletionClient(
         model="gemini-2.0-flash",
-        api_key="AIzaSyAXexY48Ezd0I-g8siYw7aplfKz-iwH55k"
+        api_key="AIzaSyAXexY48Ezd0I-g8siYw7aplfKz-iwH55k",
+        base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
     )
 
     # Prepare the user message with context

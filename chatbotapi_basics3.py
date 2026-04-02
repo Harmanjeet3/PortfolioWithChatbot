@@ -27,8 +27,8 @@ class UserRequest(BaseModel):
 async def ask_resume(request: UserRequest):
     # Initialize model client
     model_client = OpenAIChatCompletionClient(
-        model="gemini-1.5-flash-8b",
-        api_key="AIzaSyCigOhKshdsZW8J1KH38W1n3pYwc5Isgvw"
+        model="gemini-2.0-flash",
+        api_key="AIzaSyAXexY48Ezd0I-g8siYw7aplfKz-iwH55k"
     )
 
     # Prepare the user message with context

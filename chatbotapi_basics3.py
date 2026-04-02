@@ -1,9 +1,6 @@
-from fastapi import FastAPI
+﻿from fastapi import FastAPI
 from pydantic import BaseModel
-from autogen_core.models import UserMessage
-from autogen_ext.models.openai import OpenAIChatCompletionClient
-
-
+from openai import AsyncOpenAI
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -25,38 +22,32 @@ class UserRequest(BaseModel):
 
 @app.post("/ask")
 async def ask_resume(request: UserRequest):
-    # Initialize model client
-    model_client = OpenAIChatCompletionClient(
-        model="gemini-2.0-flash",
+    client = AsyncOpenAI(
         api_key="AIzaSyAXexY48Ezd0I-g8siYw7aplfKz-iwH55k",
         base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
     )
 
-    # Prepare the user message with context
-    user_msg = UserMessage(
-        content=(
-            f"You are an AI assistant for Harmanjeet Singh’s portfolio website. "
-            "Reply for greetings like 'hello', 'hi', 'hey' with a friendly greeting. and ask how can you help. "
-            "If the user asks about your capabilities, you can say: "
-            "'I can answer questions about Harmanjeet Singh’s portfolio, including his experience, projects, and skills.'\n"
-            "if the user says 'thank you' or 'thanks', respond with 'You're welcome! If you have any more questions, feel free to ask.'\n"
-            "if user says 'who are you' or 'what is your name', respond with 'I am Harmanjeet Singh's portfolio assistant.'\n"
-            "You MUST only answer questions using the resume below. "
-            "If the question is not in the resume, reply: "
-            "'That information is not available in the portfolio.'\n\n"
-            f"Resume:\n{resume_text}\n\n"
-            f"Question: {request.message}"
-        ),
-        source="user"
+    response = await client.chat.completions.create(
+        model="gemini-2.0-flash",
+        messages=[
+            {
+                "role": "user",
+                "content": (
+                    "You are an AI assistant for Harmanjeet Singh's portfolio website. "
+                    "Reply for greetings like 'hello', 'hi', 'hey' with a friendly greeting. and ask how can you help. "
+                    "If the user asks about your capabilities, you can say: "
+                    "'I can answer questions about Harmanjeet Singh's portfolio, including his experience, projects, and skills.'\n"
+                    "if the user says 'thank you' or 'thanks', respond with 'You are welcome! If you have any more questions, feel free to ask.'\n"
+                    "if user says 'who are you' or 'what is your name', respond with 'I am Harmanjeet Singh portfolio assistant.'\n"
+                    "You MUST only answer questions using the resume below. "
+                    "If the question is not in the resume, reply: "
+                    "'That information is not available in the portfolio.'\n\n"
+                    f"Resume:\n{resume_text}\n\n"
+                    f"Question: {request.message}"
+                )
+            }
+        ]
     )
 
-    # Send message to the model
-    response = await model_client.create([user_msg])
-
-    # Close the client
-    await model_client.close()
-
-    # Extract assistant's reply
-    reply_text = getattr(response, "content", str(response))
-
+    reply_text = response.choices[0].message.content
     return {"response": reply_text}
